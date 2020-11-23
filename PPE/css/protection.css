@@ -1,0 +1,67 @@
+#instruction{
+	margin-top: 60px;
+	padding: 35px;
+	font-size: 24px;
+	color: #F9F9F9;
+	text-align: center;
+}
+#covid-text{
+	margin: 0;
+	padding: 0;
+	height: 450px;
+	width: 100%;
+	background-color: #747474;
+}
+.ct-head{
+	background-color: #000000;
+	font-size: 36px;
+	text-align: center;
+	font-family: "courier new";
+	padding: 0;
+	margin: 0;
+}
+.twitter{
+	width: 280px;
+	height: 500px;
+	margin-left: 10px;
+	/* background-color: #d5d5d5; */
+	overflow: hidden;
+		display:inline
+}
+.twitter2{
+	width: 280px;
+	height: 500px;
+	margin-left: 10px;
+	/* background-color: #d5d5d5; */
+	overflow: hidden;
+	display:inline
+}
+.twitter3{
+	width: 280px;
+	height: 500px;
+	margin-left: 10px;
+	/* background-color: #d5d5d5; */
+	overflow: hidden;
+	display:inline
+}
+.twitter4{
+	width: 280px;
+	height: 500px;
+	margin-left: 10px;
+	/* background-color: #d5d5d5; */
+	overflow: hidden;
+	display:inline
+}
+.twitter5{
+	width: 280px;
+	height: 500px;
+	margin-left: 10px;
+	/* background-color: #d5d5d5; */
+	overflow: hidden;
+	display:inline
+}
+.twitter-timeline{
+	width: 280px;
+	height: 500px;
+	background-color: #e7d9bb;
+}
