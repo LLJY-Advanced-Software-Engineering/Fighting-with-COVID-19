@@ -1,0 +1,50 @@
+body{
+	background-color: #747474;
+}
+#contain{
+	/* margin-top: 21px; */
+}
+
+#instruction{
+	margin-top: 60px;
+	padding: 20px;
+	font-size: 24px;
+	
+	color: #F9F9F9;
+	text-align: center;
+}
+.case{
+	width: 100%;
+	height: 500;
+	margin-bottom:100px;
+	margin-top: 300px;
+	padding:0;
+	overflow:hidden;
+}
+#covid-text{
+	margin: 0;
+	padding: 0;
+	height: 450px;
+	width: 100%;
+	background-color: #747474;
+}
+.ct-head{
+	background-color: #000000;
+	font-size: 36px;
+	text-align: center;
+	font-family: "courier new";
+	padding: 0;
+	margin: 0;
+}
+.twitter{
+	width: 280px;
+	height: 500px;
+	margin-left: 40px;
+	overflow: hidden;
+		display:inline
+}
+.twitter-timeline{
+	width: 280px;
+	height: 500px;
+	background-color: #e7d9bb;
+}
