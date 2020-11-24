@@ -1,0 +1,30 @@
+#foot{
+	 /* position: fixed; */
+	 	width: 100%;
+	 	height: 130px;
+		margin-top:150px;
+		padding:0;
+	 	background-color: #e5e5e5;
+ }
+#bottom_icon{
+	 text-align: center;
+	 
+ }
+ #bottom_text{
+	 margin-top: 0px;
+ 	 text-align: center;
+ 	 
+  }
+.bottom_a{
+	      color:#c6d3cd;
+		  display: inline;
+	      text-decoration:none;
+  }
+.bottom_a:hover{
+  	      color:#6e7365;
+		  display: inline;
+  	      text-decoration:none;
+  }
+  #bottom-copyright{
+	  text-align: center;
+  }
