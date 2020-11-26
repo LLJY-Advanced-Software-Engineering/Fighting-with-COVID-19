@@ -1,7 +1,3 @@
-# Supply-Chain-of-PPE
+# Fighting with COVID 19
 
-This project model how the supply and demand for the PPE varies during COVID-19 for the healthcare workers to be able to meet their demands
-
-For example, hospital already has certain stock of PPE
-
-New patients come for a result of COVID test, more PPE is required by the hospital which was not anticipated, hospital must ask supplier for more PPE, however, other hospitals are in the same situation, and PPE demand suddenly increases, as a result, supply falls short.
+During COVID-19, the purpose of our project is to create a platform that provides detailed confirm cases at different areas in Canada, such as, the confirmed cases in the last 30 days, the near services based on one location, and specific travel suggestions from social media. This helps the equipment suppliers to identify the finite needs of PPEs to protect the public health and safety in each area, humans in each area can get enough information about the seriousness of the COVID-19 to avoid unnecessary travel during the particular time. Apparently, it aims to alert people taking action to the virus, meanwhile, gives useful information for users to browse and utilize.  
