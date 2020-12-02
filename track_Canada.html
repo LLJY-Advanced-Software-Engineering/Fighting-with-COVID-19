@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tracker - Canada - Fighting with COIVD-19</title>
+	<!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+	<!-- data Canada css -->
+		<!-- Chart.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	
+	
+</head>
+
+<body>
+ <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+     <div class="container"><a class="navbar-brand logo" href="#">Fighting with COIVD-19</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+         <div
+             class="collapse navbar-collapse" id="navbarNav">
+             <ul class="nav navbar-nav ml-auto">
+                 <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                 <li class="nav-item"></li>
+                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Services</a>
+                     <div class="dropdown-menu"><a class="dropdown-item" href="Tracker_COVID.html">COVID -19 Tracker</a><a class="dropdown-item" href="PPE_Demand.html">PPE Demand</a><a class="dropdown-item" href="protection_travel.html">Protection and Travel</a></div>
+                 </li>
+                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                     <div class="dropdown-menu"><a class="dropdown-item" href="project_resoureces.html">Resources</a><a class="dropdown-item" href="team.html">Team</a><a class="dropdown-item" href="FAQs.html">FAQs</a></div>
+                 </li>
+             </ul>
+     </div>
+     </div>
+ </nav>
+    <main class="page lanidng-page">
+		<section class="portfolio-block block-intro" style="height: 30px;">
+
+       <p><strong>COVID-19 Tracker - Canada</strong></p>
+ </section>
+ 
+ 
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+				
+				<h5 class="card-title" style="text-align: center; color: #6f70aa;">
+				This chart record the confirmed cases, active cases, test cases, recovered cases and deceased for different provinces in Canada.
+				</h5>
+				
+				<!-- data - Canada -->
+   				<div class="container my-5">
+				  <div class="row text-center">
+					  <div class="col-3 text-info">
+					    <h5>Province</h5>
+						 <!-- <p id="province"> -->
+						<select class="selectpicker" id="province">
+						  <option>Nunavut</option>
+						  <option>Yukon</option>
+						  <option>Prince Edward Island</option>
+						  <option>Newfoundland and Labraor</option>
+						  <option>New Brunswick</option>
+						  <option>British Columbia</option>
+						  <option>Nova Scotia</option>
+						  <option>Saskatchewan</option>
+						  <option>Alberta</option>
+						  <option>Manitoba</option>
+						  <option>Quebec</option>
+						  <option selected="selected">Ontario</option>
+						  <option>Northwest Territories</option>
+						  <option>Repatriated CDN</option>
+						</select>
+				
+					   <!-- </p> -->
+					  </div>
+				    <div class="col-3 text-warning">
+				      <h5>Confirmed</h5>
+				      <p id="confirmed"></p>
+				    </div>
+				    <div class="col-3 text-info">
+				      <h5>Active</h5>
+				      <p id="active"></p>
+				    </div>
+					<div class="col-3 text-info">
+					  <h5>Tests</h5>
+					  <p id="test"></p>
+					</div>
+				    <div class="col-3 text-success">
+				      <h5>Recovered</h5>
+				      <p id="recovered"></p>
+				    </div>
+				    <div class="col-3 text-danger">
+				      <h5>Deceased</h5>
+				      <p id="deaths"></p>
+				    </div>
+				  </div>
+				</div>
+				<div class="container text-center my-5">
+				  <h6 class="text-info">
+				    *Click on the <strong> Confirmed/Active/Test/Recovered/Deceased</strong> buttons above to see the chart
+				    individually.*
+				  </h6>
+				</div>
+                <div class="d-flex justify-content-center align-items-center content"> 
+				<!-- COVID data--Canada -->
+				
+				<canvas id="myChart"></canvas>
+				
+
+
+				
+					
+            </div>		
+        </section>
+		
+		<section class="portfolio-block call-to-action border-bottom">
+			
+		    <div class="d-flex justify-content-center align-items-center content">
+				<a href="tracker_line.html"><button class="btn btn-outline-primary btn-lg" type="button"><i class="fa fa-line-chart"></i></button></a>
+		        <h3>&nbsp; Tracker-Global(line)&nbsp;&nbsp;</h3>
+				<a href="tracker_map.html"><button class="btn btn-outline-primary btn-lg" type="button"><i class="fa fa-map-o"></i></button></a>
+		        <h3>&nbsp; Tracker-Global(map)&nbsp; &nbsp;<br></h3>
+				<a href="track_Canada.html"><button class="btn btn-outline-primary btn-lg" type="button"><i class="la la-line-chart"></i></button></a>
+		        <h3>&nbsp; Tracker-Canada(line)&nbsp;&nbsp;<br></h3>
+		    </div>
+		    <div class="container">
+		        <h4 class="text-info" style="text-align: center;">Click any icon or image to the services you want</h4>
+		    </div>
+			<!-- </section> -->
+		    <section class="portfolio-block photography">
+		        <div class="container">
+		            <div class="row no-gutters">
+						
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="tracker_line.html"><img class="img-fluid image" src="img/track_global_line.jpg"></a></div>
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="tracker_map.html"><img class="img-fluid image" src="img/track_globalMap.jpg"></a></div>
+		                <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="track_Canada.html"><img class="img-fluid image" src="img/track_canada.jpg"></a></div>
+		            </div>
+		        </div>
+		   </section> 
+		</section>
+		
+		
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2>About the data</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-load-a"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Gradually Change</h3>
+                                <p class="card-text">This data updates from various APIs , might not reflect some cases still being reported. It is possible that some changes from sources produce imprecise / no data being reported for the several regions.<br></p>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-information"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Official&nbsp;<strong>Statistics</strong></h3>
+                                <p class="card-text">The numbers are based on official estimates and test. There are some deviation compared with the real situations. For example, some countries that lack the proper infrastructure to diagnose patients, unconfirmed cases may
+                                    not be resolved.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-search"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Data sources</h3>
+                                <p class="card-text">You can free to use the data sources that&nbsp; are available on Resources. Thanks for all data providers and collectors!</p>
+                            </div>
+                        </div>
+                    </div>
+                
+				</div>
+            </div>
+        </section>
+    </main>
+	
+	
+	
+	
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="Tracker_COVID.html">COVID -19 Tracker</a></li>
+                            <li><a href="PPE_Demand.html">PPE Demand</a></li>
+                            <li><a href="protection_travel.html">Protection and Travel</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="project_resoureces.html">Resources</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="FAQs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3><strong>Fighting with COIVD-19</strong></h3>
+                        <p>The project is about to track and model information of COVID-19. It also models how the supply and demand for the Personal Protective Equipment varies during COVID-19 for the health regions in Canada to be able to meet their demands.</p>
+                    </div>
+                    <div class="col item social"><a href="https://github.com/LLJY-Advanced-Software-Engineering/Fighting-with-COVID-19" target="_blank"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a><a href="https://paypal.me/Xinyu0223?locale.x=en_US" target="_blank"><i class="fa fa-paypal"></i></a><a href="#"><i class="icon ion-chevron-up"></i></a></div>                
+                </div>
+                <p class="copyright">LLJY&nbsp; Team7&nbsp; © 2020</p>
+            </div>
+        </footer>
+    </div>
+	
+	<!-- bootstrap js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+	<!-- Data Canada js -->
+		<script src="js/provinces.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</body>
+
+</html>
